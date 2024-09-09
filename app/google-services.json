@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798594769988",
+    "project_id": "cookiestorecostarica",
+    "storage_bucket": "cookiestorecostarica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798594769988:android:fe44171163108994168811",
+        "android_client_info": {
+          "package_name": "com.example.cookie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABq_Qn6MkJ7JJGSlKZhNx5dznAQvCFIuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

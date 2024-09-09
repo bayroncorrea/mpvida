@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.m_p_v.Login.LoginActivity"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:id="@+id/LoginImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/mpv"
+        android:transitionName="LogoImageTrans"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/bienvenidoLabel"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Bienvenido a "
+        android:textAlignment="center"
+        android:textColor="#0288D1"
+        android:textSize="30sp"
+        android:transitionName="textTrans" />
+    <TextView
+        android:id="@+id/bienvenidoLabel1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:text="Misión Palabra de Vida"
+        android:layout_marginBottom="80dp"
+        android:textAlignment="center"
+        android:textColor="#0288D1"
+        android:textSize="30sp"
+        android:transitionName="textTrans" />
+
+    <TextView
+        android:id="@+id/continuarLabel"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia Sesión para continuar"
+        android:textSize="24sp"
+        android:fontFamily="@font/amaranth"
+        android:textColor="#0288D1"
+        android:transitionName="iniciaSesionTextTrans"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usuario"
+            style="@style/MyOutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Email"
+            android:transitionName="emailImputTextTrans"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:textColor="#000000"
+                android:textColorHighlight="#0288D1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contrasenaTextField"
+            style="@style/MyOutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Contraseña"
+            android:transitionName="passwordInputTextTrans"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/your_icon_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHighlight="#0288D1"
+                android:textCursorDrawable="@color/your_icon_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/olvidasteContra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/abel"
+            android:text="Olvidaste tu contraseña?"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="#0288D1"
+            android:textSize="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#0288D1"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="INICIO"
+            android:transitionName="buttonSignInTrans"
+            app:cornerRadius="20dp" />
+
+        <ImageView
+            android:id="@+id/loginGoogle"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/abel"
+            android:text="Eres nuevo? Registrate!"
+            android:textColor="#0288D1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:transitionName="newUserTrans" />
+
+    </LinearLayout>
+
+</LinearLayout>

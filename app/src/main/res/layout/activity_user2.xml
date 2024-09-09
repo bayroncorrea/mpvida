@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.m_p_v.UserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Contenido superior -->
+        <LinearLayout
+            android:id="@+id/text_Presen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/toolbar"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_button"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/amaranth"
+                android:paddingLeft="10dp"
+                android:text="MISIÓN PALABRA DE VIDA"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- TabLayout y ViewPager -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/toolbar"
+                app:tabGravity="fill"
+                app:tabIconTint="@color/colorPrimaryDark"
+                app:tabIndicatorColor="#8202D1"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@color/my_dark_primary"
+                app:tabTextColor="@color/colorAccent">
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

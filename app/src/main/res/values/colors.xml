@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color> <!-- Color de la barra -->
+    <color name="colorPrimaryDark">#000000</color> <!-- Color de barra de notificaciones -->
+    <color name="colorAccent">#FFFFFF</color> <!-- Color de los acentos -->
+    <color name="my_dark_primary">#B69797</color>
+    <color name="your_icon_color">#0288D1</color> <!-- Cambia #FF0000 al color que desees -->
+
+    <color name="colorButtonDefault">#0288D1</color> <!-- Color por defecto del botón -->
+    <color name="colorButtonPressed">#F4A300</color> <!-- Color cuando el botón está presionado -->
+    <color name="colorButtonFocused">#FFA000</color> <!-- Color cuando el botón está enfocado -->
+
+    <color name="tab_text_color">#FFFFFF</color> <!-- Color blanco para texto -->
+    <color name="tab_icon_color">#0288D1</color> <!-- Color blanco para íconos -->
+
+
+    <color name="colorHint">#000000</color> <!-- Gris oscuro para modo claro -->
+    <color name="custom_background_color">#FFFFFF</color> <!-- Color de fondo de la caja -->
+    <color name="custom_error_color">#FF0000</color> <!-- Color del borde en caso de error -->
+
+</resources>
